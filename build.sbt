@@ -43,5 +43,5 @@ lazy val slides = project
   .settings(tutSettings: _*)
   .settings(
     tutSourceDirectory := baseDirectory.value / "tut",
-    tutTargetDirectory := baseDirectory.value / "tut-out"
+    tutTargetDirectory := file("doc")
   ).dependsOn(core)
